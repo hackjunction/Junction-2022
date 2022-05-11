@@ -21,9 +21,9 @@ $(document).ready(function(){
         
         var range = 15;
         
-        var color = "background: rgb("+getRandomInt(0,255)+","+getRandomInt(0,255)+","+getRandomInt(0,255)+");";
+        var color = "background: rgb("+getRandomInt(250,255)+","+getRandomInt(250,255)+","+getRandomInt(250,255)+");";
         
-        var sizeInt = getRandomInt(10, 30);
+        var sizeInt = getRandomInt(2, 10);
         size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
         
         var left = "left: " + getRandomInt(mousePos.x-range-sizeInt, mousePos.x+range) + "px;";
