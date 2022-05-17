@@ -71,7 +71,6 @@
 
 .flipdown {
   overflow: visible;
-  display: flex;
   justify-content: center;
 }
 
