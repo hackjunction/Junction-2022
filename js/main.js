@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('The countdown has ended!');
     });
 
+
+
+
   // Toggle theme
   let body = document.body;
   body.classList.toggle('light-theme');
@@ -33,3 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
   var ver = document.getElementById('ver');
   ver.innerHTML = flipdown.version;
 });
+
+const clickForMore = () => {
+  var a = document.getElementsByClassName("pixel")
+  a[0].focus()
+}
