@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('The countdown has ended!');
     });
 
+
+
+
   // Toggle theme
   let body = document.body;
   body.classList.toggle('light-theme');
@@ -33,3 +36,37 @@ document.addEventListener('DOMContentLoaded', () => {
   var ver = document.getElementById('ver');
   ver.innerHTML = flipdown.version;
 });
+
+const validateEmail = (email) => {
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+};
+
+const clickForMore = async () => {
+  var a = document.getElementsByClassName("pixel")
+  a[0].focus()
+  setTimeout(() => {
+    var di = document.getElementsByClassName("inputs")
+    let btn = document.createElement("button");
+    btn.innerHTML = "Submit";
+    btn.onclick =async function(){
+      var pix = document.getElementsByClassName("pixel")
+      var email = pix[0].value
+      var valid = validateEmail(email)
+      if(valid) {
+      var res = await fetch("https://mpbnf28kl4.execute-api.eu-west-1.amazonaws.com/emails-22", {
+        method: "POST",
+        mode: "no-cors",
+        body: email
+      })
+      }
+      else {
+        console.log(email)
+      }
+    }
+    di[0].appendChild(btn)
+  },1000)
+}
