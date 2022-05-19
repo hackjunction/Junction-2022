@@ -44,13 +44,16 @@ const validateEmail = (email) => {
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     );
 };
-
+var calc = 0
 const clickForMore = async () => {
   var a = document.getElementsByClassName("pixel")
   a[0].focus()
   setTimeout(() => {
+    if(calc == 0)  {
     var di = document.getElementsByClassName("inputs")
     let btn = document.createElement("button");
+    calc = 1
+    btn.className = "button"
     btn.innerHTML = "Submit";
     btn.onclick =async function(){
       var pix = document.getElementsByClassName("pixel")
@@ -67,6 +70,8 @@ const clickForMore = async () => {
         console.log(email)
       }
     }
+    
     di[0].appendChild(btn)
+  }
   },1000)
 }
