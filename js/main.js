@@ -1,5 +1,3 @@
-import * as THREE from '../three/three.min.js';
-
 document.addEventListener('DOMContentLoaded', () => {
 
   // Unix timestamp (in seconds) to count down to
