@@ -20,7 +20,7 @@ body,
 }
 
 body.light-theme {
-  background-color: #000000;
+  background-color: #151515;
   background-size: 75px 75px; background-image: linear-gradient(to right, grey 1px, transparent 0.000001px), linear-gradient(to bottom, grey 1px, transparent 0.1px); 
 
 }
@@ -371,4 +371,26 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+
+.pixel3{
+  position: relative;
+  width: 280px;
+  height: 60px;
+  margin: 20px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border-radius: 100%;
+  text-transform: uppercase;
+  opacity: 0.000001;
+  text-align: center;
+  color: var(--color-white);
+  border: 1px solid var(--color-purple);
+  background: var(--color-purple);
+  background-size: 180px;
+  opacity: 1;
+  border-radius: 0%;
+
 }

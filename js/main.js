@@ -1,3 +1,5 @@
+import * as THREE from '../three/three.min.js';
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // Unix timestamp (in seconds) to count down to
@@ -33,8 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 1000);*/
 
   // Show version number
-  var ver = document.getElementById('ver');
-  ver.innerHTML = flipdown.version;
+
 });
 
 const validateEmail = (email) => {
@@ -46,8 +47,16 @@ const validateEmail = (email) => {
 };
 var calc = 0
 const clickForMore = async () => {
+  if(calc == 0) {
   var a = document.getElementsByClassName("pixel")
   a[0].focus()
+  var b = document.createElement("input")
+  b.className = "pixel3"
+  b.placeholder = "Enter your email!"
+  var inp = document.getElementsByClassName("inputs")
+  setTimeout(()=>{inp[0].appendChild(b)
+    a[0].remove()},1000)
+  }
   setTimeout(() => {
     if(calc == 0)  {
     var di = document.getElementsByClassName("inputs")
@@ -56,7 +65,7 @@ const clickForMore = async () => {
     btn.className = "button"
     btn.innerHTML = "Submit";
     btn.onclick =async function(){
-      var pix = document.getElementsByClassName("pixel")
+      var pix = document.getElementsByClassName("pixel3")
       var email = pix[0].value
       var valid = validateEmail(email)
       if(valid) {
@@ -65,12 +74,15 @@ const clickForMore = async () => {
         mode: "no-cors",
         body: email
       })
+      pix[0].value = ""
+      
       }
       else {
         console.log(email)
       }
     }
-    
+        
+   
     di[0].appendChild(btn)
   }
   },1000)
