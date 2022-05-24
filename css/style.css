@@ -360,15 +360,15 @@ body {
 }
 
 .button {
+  display: block;
+  margin: auto;
   background-color: #7a18ec;
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
 }
 
@@ -392,4 +392,28 @@ body {
   opacity: 1;
   border-radius: 0%;
 
+}
+
+.clickSubmit {
+
+  overflow: hidden;
+  -webkit-animation:animateSubmit 2s;
+  -moz-animation:animateSubmit 2s;
+  -o-animation:animateSubmit 2s;
+  -ms-animation:animateSubmit 2s;
+  animation:animateSubmit 2s;
+}
+
+.animateSubmit {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+@keyframes animateSubmit {
+  0% {
+
+  }
+  100% {
+    opacity:0;
+    margin-left:3500px;
+  }
 }

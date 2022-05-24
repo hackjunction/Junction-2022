@@ -53,6 +53,7 @@ const clickForMore = async () => {
     var b = document.createElement("input")
     b.className = "pixel3"
     b.placeholder = "Enter your email!"
+    b.id="but12"
     var inp = document.getElementsByClassName("inputs")
     setTimeout(()=>{inp[0].appendChild(b)
       a[0].remove()},1000)
@@ -63,6 +64,7 @@ const clickForMore = async () => {
     let btn = document.createElement("button");
     calc = 1
     btn.className = "button"
+    btn.id = "but11"
     btn.innerHTML = "Submit";
     btn.onclick =async function(){
       var pix = document.getElementsByClassName("pixel3")
@@ -70,19 +72,25 @@ const clickForMore = async () => {
       var valid = validateEmail(email)
       if(valid) {
         pix[0].value = ""
+        pix[0].placeholder = "4.11 - 6.11.2022"
+        document.getElementById("Subm").className = "clickSubmit"
         var res = await fetch("https://mpbnf28kl4.execute-api.eu-west-1.amazonaws.com/emails-22", {
           method: "POST",
           mode: "no-cors",
           body: email
         })
-      
+        setTimeout(() => {
+          document.getElementById("but11").remove();
+          document.getElementById("but12").remove()
+        },1300)
       
       }
       else {
         var pix = document.getElementsByClassName("pixel3")
-        
-        pix[0].value = "Invalid Email :)"
+        pix[0].placeholder = "Invalid Email :)"
+        pix[0].value = ""
         console.log(email)
+        //document.getElementById("Subm").className = "clickSubmit"
       }
     }
         
