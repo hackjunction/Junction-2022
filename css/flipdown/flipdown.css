@@ -249,7 +249,7 @@
 
   .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):before,
   .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):after {
-    left: 69px;
+    left: 57px;
   }
 
   .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):before {
