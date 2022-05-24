@@ -178,8 +178,8 @@ body.light-theme .buttons .button:hover {
 
 .cool{
   font-weight: 350;
-  font-size: 2.4em;
-  margin-top: 19px;
+  font-size: 2.8em;
+  margin-top: 0.6em;
   font-family: 'Roboto', sans-serif;
   color: #FFFFFF;
 }
@@ -190,8 +190,8 @@ body.light-theme .buttons .button:hover {
 }
 
 .scaledlogo{
-  width: 20%;
-  height: 20%;
+  width: 20em;
+  height: 7em;
 }
 
 .sneakbtn {
