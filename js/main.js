@@ -46,14 +46,16 @@ const validateEmail = (email) => {
 var calc = 0
 const clickForMore = async () => {
   if(calc == 0) {
-  var a = document.getElementsByClassName("pixel")
-  a[0].focus()
-  var b = document.createElement("input")
-  b.className = "pixel3"
-  b.placeholder = "Enter your email!"
-  var inp = document.getElementsByClassName("inputs")
-  setTimeout(()=>{inp[0].appendChild(b)
-    a[0].remove()},1000)
+    var signupbutton = document.getElementById("signup")
+    signupbutton.remove()
+    var a = document.getElementsByClassName("pixel")
+    a[0].focus()
+    var b = document.createElement("input")
+    b.className = "pixel3"
+    b.placeholder = "Enter your email!"
+    var inp = document.getElementsByClassName("inputs")
+    setTimeout(()=>{inp[0].appendChild(b)
+      a[0].remove()},1000)
   }
   setTimeout(() => {
     if(calc == 0)  {
@@ -67,15 +69,19 @@ const clickForMore = async () => {
       var email = pix[0].value
       var valid = validateEmail(email)
       if(valid) {
-      var res = await fetch("https://mpbnf28kl4.execute-api.eu-west-1.amazonaws.com/emails-22", {
-        method: "POST",
-        mode: "no-cors",
-        body: email
-      })
-      pix[0].value = ""
+        pix[0].value = ""
+        var res = await fetch("https://mpbnf28kl4.execute-api.eu-west-1.amazonaws.com/emails-22", {
+          method: "POST",
+          mode: "no-cors",
+          body: email
+        })
+      
       
       }
       else {
+        var pix = document.getElementsByClassName("pixel3")
+        
+        pix[0].value = "Invalid Email :)"
         console.log(email)
       }
     }
