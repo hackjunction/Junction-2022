@@ -82,7 +82,7 @@ const clickForMore = async () => {
         setTimeout(() => {
           document.getElementById("but11").remove();
           document.getElementById("but12").remove()
-        },1300)
+        },800)
       
       }
       else {
