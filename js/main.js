@@ -36,6 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+var shooting = false
+
 const validateEmail = (email) => {
   return String(email)
     .toLowerCase()
@@ -67,8 +69,7 @@ const clickForMore = async () => {
     btn.id = "but11"
     btn.innerHTML = "Submit";
     btn.onclick =async function(){
-      changeOpacity()
-      shootFireworks()
+      shooting = true
       var pix = document.getElementsByClassName("pixel3")
       var email = pix[0].value
       var valid = validateEmail(email)
@@ -101,6 +102,9 @@ const clickForMore = async () => {
   }
   },1000)
 }
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
 const canvas = document.getElementById("canvas");
@@ -231,6 +235,7 @@ function animate(){
   requestAnimationFrame(animate);
  // ctx.clearRect(0,0,canvas.width,canvas.height)
   ctx.fillStyle = "rgba(0,0,0,0.09)"
+  ctx.backgroundImage = "images/background.jpg"
   ctx.fillRect(0,0,canvas.width,canvas.height);
   for(var i = 0; i < fireworkArray.length; i++){
     fireworkArray[i].update();
@@ -261,15 +266,26 @@ function changeOpacity() {
   fireworkCanvas.style.backgroundSize = "75px 75px";
   fireworkCanvas.style.backgroundImage= "linear-gradient(to right, grey 1px, transparent 0.000001px), linear-gradient(to bottom, grey 1px, transparent 0.1px)"; 
 }
-
+var count = 0
 function shootFireworks(){
-  animate();
+  if(shooting){
+    if(count===0){
+      animate();
+      fireworkCanvas.style.opacity = 1;
+      
+    }
+    count = 1
+  }
 }
 const fireworkCanvas = document.getElementById('canvas');
 
 const fireworkBtn = document.getElementById('shoot');
 
-var count = 0
+setInterval(function() {
+  shootFireworks()
+},1000);
+
+
 // ✅ Change button text on click
 fireworkBtn.addEventListener('click', function handleClick() {
   if(count === 0){
