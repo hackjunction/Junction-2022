@@ -59,9 +59,11 @@ body.light-theme .buttons .button:hover {
 .example h1 {
   text-align: center;
   font-weight: 100;
-  font-size: 3em;
+  font-size: 2em;
   margin-top: 0;
   margin-bottom: 10px;
+  margin:auto;
+  width: 28em;
 }
 
 .example p {
@@ -214,7 +216,7 @@ body.light-theme .buttons .button:hover {
   right: 0;
   left: 0;
   display: block;
-  width: 240px;
+  width: auto;
   padding: 40px;
   margin: 0 auto;
   border: 0;
@@ -259,7 +261,7 @@ body.light-theme .buttons .button:hover {
 }
 
 .sneakbtn2:before{
-  content: "Hacking the future in...";
+  content: "We know you can’t wait. The countdown has already started. See you November 4.-6. fully live again in Dipoli, Espoo!";
 }
 
 .sneakbtn2:hover:before {
