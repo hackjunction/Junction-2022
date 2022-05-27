@@ -62,6 +62,7 @@ body.light-theme .buttons .button:hover {
   margin-bottom: 10px;
   margin:auto;
   width: 28em;
+  word-wrap: break-word
 }
 
 .example p {

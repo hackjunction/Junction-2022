@@ -69,7 +69,7 @@ const clickForMore = async () => {
     btn.id = "but11"
     btn.innerHTML = "Submit";
     btn.onclick =async function(){
-      shooting = true
+    //shooting = true
       var pix = document.getElementsByClassName("pixel3")
       var email = pix[0].value
       var valid = validateEmail(email)
