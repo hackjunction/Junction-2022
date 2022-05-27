@@ -1,6 +1,6 @@
 html {
   height: 100%;
-  overflow:hidden;
+  
 }
 
 body {
@@ -10,7 +10,7 @@ body {
   align-items: center;
   align-content: space-around;
   background-color: #23033F;
-  height: 100%; overflow: hidden
+  height: 100%;
 }
 
 
@@ -152,11 +152,21 @@ body.light-theme .buttons .button:hover {
   .video {
     width: 360px;
   }
+  @media(max-height:950px) {
+    .video {
+      width:250px;
+    }
+  }
 }
 
 @media(max-width: 1560px) {
   .video {
     width: 310px;
+  }
+  @media(max-height:750px) {
+    .video {
+      width:250px;
+    }
   }
 }
 @media(max-width: 1540px) {
