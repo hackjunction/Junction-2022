@@ -135,9 +135,14 @@ body.light-theme .buttons .button:hover {
     font-size: 16px;
   }
 }
-@media(min-width: 1200px) {
+@media(min-width: 1800px) {
   .video {
-    width: 370px;
+    width: 460px;
+  }
+}
+@media(min-width: 1530px) {
+  .video {
+    width: 400px;
   }
 }
 @media(max-width: 650px) {
