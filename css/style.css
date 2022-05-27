@@ -114,11 +114,38 @@ body.light-theme .buttons .button:hover {
   margin-right: 5px;
 }
 
-@media(max-width: 620px) {
+.background {
+  width: 100%;
+  height: 100%;
+  margin-top: auto;
+  position: absolute;
+  left: 0px;
+  bottom: 0%;
+  z-index: -5;
+}
+
+.background_mobile{
+  display:none;
+ }
+@media(max-width: 650px) {
   .example {
     width: 100%;
     
   }
+  .background {
+    display:none;
+  }
+  
+  .background_mobile{
+    display:block;
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+    position: absolute;
+    left: 0px;
+    bottom: 0%;
+    z-index: -5;
+   }
   .video {
     width: 250px;
   }
@@ -165,16 +192,7 @@ body.light-theme .buttons .button:hover {
   }
 }
 
-.background {
-  width: 100%;
-  height: 100%;
-  margin-top: 30px;
-  position: absolute;
-  left: 0px;
-  bottom: 0%;
-  z-index: -5;
 
-}
 
 .ball {
   pointer-events: none;
@@ -273,9 +291,9 @@ body.light-theme .buttons .button:hover {
   content: "We know you can’t wait. The countdown has already started. See you November 4.-6. fully live again in Dipoli, Espoo!";
 }
 
-.sneakbtn2:hover:before {
+/*.sneakbtn2:hover:before {
   content: "Now, Click this!";
-}
+}*/
 
 :root {
   --color-red: #ec1840;
