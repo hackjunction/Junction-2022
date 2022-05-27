@@ -215,7 +215,7 @@
 
   .flipdown {
     width: 330px;
-    height: 65px;
+    height: 72px;
   }
 
   .flipdown .rotor {
@@ -234,7 +234,7 @@
   }
 
   .flipdown .rotor-group {
-    padding-right: 20px;
+    padding-right: 18px;
   }
 
   .flipdown .rotor-group:last-child {
@@ -249,19 +249,19 @@
 
   .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):before,
   .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):after {
-    left: 57px;
+    left: 55px;
   }
 
   .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):before {
     bottom: 13px;
-    height: 8px;
-    width: 8px;
+    height: 7px;
+    width: 7px;
   }
 
   .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):after {
     bottom: 29px;
-    height: 8px;
-    width: 8px;
+    height: 7px;
+    width: 7px;
   }
 
   .flipdown .rotor-leaf-front,
