@@ -137,19 +137,26 @@ body.light-theme .buttons .button:hover {
     font-size: 16px;
   }
 }
+
 @media(min-width: 1800px) {
   .video {
-    width: 460px;
+    width: 420px;
   }
 }
-@media(min-width: 1560px) {
+@media(min-width: 1720px) {
   .video {
     width: 400px;
   }
 }
+@media(min-width: 1560px) {
+  .video {
+    width: 360px;
+  }
+}
+
 @media(max-width: 1560px) {
   .video {
-    width: 300px;
+    width: 310px;
   }
 }
 @media(max-width: 1540px) {
@@ -157,7 +164,8 @@ body.light-theme .buttons .button:hover {
     width: 280px;
   }
 }
-@media(max-width: 650px) {
+
+@media(max-width: 750px) {
   .example {
     width: 100%;
     margin-top: 10px;
