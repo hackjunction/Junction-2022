@@ -147,6 +147,12 @@ body.light-theme .buttons .button:hover {
     width: 400px;
   }
 }
+
+@media(min-width: 1510px) {
+  .video {
+    width: 300px;
+  }
+}
 @media(max-width: 650px) {
   .example {
     width: 100%;
