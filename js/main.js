@@ -106,7 +106,7 @@ const clickForMore = async () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-
+/*
 const canvas = document.getElementById("canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -299,6 +299,5 @@ fireworkBtn.addEventListener('click', function handleClick() {
 window.addEventListener("resize", (e) => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-})
-
+})*/
 });

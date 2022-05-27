@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  overflow:hidden;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
   align-items: center;
   align-content: space-around;
   background-color: #23033F;
+  height: 100%; overflow: hidden
 }
 
 
@@ -140,7 +142,7 @@ body.light-theme .buttons .button:hover {
     width: 460px;
   }
 }
-@media(min-width: 1530px) {
+@media(min-width: 1560px) {
   .video {
     width: 400px;
   }
@@ -355,7 +357,7 @@ body {
   text-align: center;
   color: var(--color-white);
   transition: var(--speed-normal);
-  border: 1px solid rgb(249, 80, 40);
+  border: 1px solid #F93C28;
   animation: 1s ease-out animate var(--speed-fast) steps(8) forwards;
 
 }
@@ -374,7 +376,7 @@ body {
 }
 
 .pixel2:last-of-type {
-  border: 1px solid rgb(249, 80, 40);
+  border: 1px solid #F93C28;
 }
 .pixel2:last-of-type:hover {
   background: var(--color-red) url(https://i.postimg.cc/wBXGXbWN/pixel.png); 
@@ -424,7 +426,7 @@ body {
     background: var(--color-red) url(https://i.postimg.cc/wBXGXbWN/pixel.png);
     transition-delay: 2s;
     background-size: 180px;
-    border: 1px solid rgb(249, 80, 40);
+    border: 1px solid #F93C28;
 
     opacity: 1;
     border-radius: 30px;
@@ -434,7 +436,7 @@ body {
   100% {
     background-color: red;
     border-radius: 30px;
-    border: 1px solid rgb(249, 80, 40);
+    border: 1px solid #F93C28;
 
     margin-bottom: 20px;
   }
@@ -443,7 +445,7 @@ body {
 .button {
   display: block;
   margin: auto;
-  background-color: rgb(249, 80, 40);
+  background-color: #F93C28;
   border: none;
   margin-bottom: 20px;
   
@@ -476,8 +478,8 @@ body {
   opacity: 0.000001;
   text-align: center;
   color: white;
-  border: 1px solid rgb(249, 80, 40);
-  background: rgb(249, 80, 40);
+  border: 1px solid #F93C28;
+  background: #F93C28;
   background-size: 180px;
   opacity: 1;
 
@@ -511,4 +513,26 @@ body {
 #canvas{
   z-index:-1;
   opacity: 0;
+}
+
+.but12::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #909;
+}
+.but12:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color:    #909;
+ opacity:  1;
+}
+.but12::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color:    #909;
+ opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color:    #909;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+ color:    #909;
+}
+
+.but12::placeholder { /* Most modern browsers support this now. */
+ color:    #909;
 }
