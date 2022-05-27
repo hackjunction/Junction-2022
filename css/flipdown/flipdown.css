@@ -53,13 +53,13 @@
 .flipdown.flipdown__theme-light .rotor,
 .flipdown.flipdown__theme-light .rotor-top,
 .flipdown.flipdown__theme-light .rotor-leaf-front {
-  color: #EFEFEF;
+  color: #CBEFCF;
   background-color: transparent;
 }
 /* Rotor bottoms */
 .flipdown.flipdown__theme-light .rotor-bottom,
 .flipdown.flipdown__theme-light .rotor-leaf-rear {
-  color: #EFEFEF;
+  color: #CBEFCF;
   background-color: transparent;
 }
 /* Hinge */
