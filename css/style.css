@@ -147,10 +147,14 @@ body.light-theme .buttons .button:hover {
     width: 400px;
   }
 }
-
-@media(min-width: 1510px) {
+@media(max-width: 1560px) {
   .video {
     width: 300px;
+  }
+}
+@media(max-width: 1540px) {
+  .video {
+    width: 280px;
   }
 }
 @media(max-width: 650px) {
