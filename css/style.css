@@ -45,9 +45,9 @@ body.light-theme .buttons .button:hover {
   font-family: 'Space Mono';
   text-align: center;
   margin: auto;
-  padding: 20px;
+  padding: 5px;
   box-sizing: border-box;
-  margin-top: 50px;
+  margin-top: 15px;
 }
 
 .example .flipdown {
