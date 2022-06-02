@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 var shooting = false
-
+console.log(123)
 const validateEmail = (email) => {
   return String(email)
     .toLowerCase()
